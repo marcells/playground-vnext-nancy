@@ -1,8 +1,8 @@
+using Microsoft.AspNet.Builder;
+using Nancy.Owin;
+
 namespace VNextNancy
 {
-    using Microsoft.AspNet.Builder;
-    using Nancy.Owin;
-
     public class Startup
     {
         public void Configure(IApplicationBuilder app)

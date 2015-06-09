@@ -1,7 +1,7 @@
+using Nancy;
+
 namespace VNextNancy
 {
-    using Nancy;
-    
     public class HomeModule : NancyModule
     {
         public HomeModule()
