@@ -1,5 +1,6 @@
 using System;
 using Nancy;
+using Nancy.ModelBinding;
 using System.Threading.Tasks;
 using static System.Console;
 
@@ -43,6 +44,27 @@ namespace VNextNancy
             };
             
             Get["/error"] = _ => { throw new Exception("Ooops, something went wrong!"); };
+            
+            Post["/some/model"] = _ => 
+            {
+                var myModel = this.Bind<MyModel>();
+              
+                var tags = string.Join(",", myModel.Tags);
+                var ints = string.Join(", ", myModel.Ints);
+                
+                WriteLine($"RememberMe: {myModel.RememberMe}");
+                WriteLine($"Ints: {ints}");
+                WriteLine($"Tags: {tags}");
+                
+                return View["Index"];
+            };
         }
+    }
+    
+    public class MyModel
+    {
+        public bool RememberMe { get; set; }
+        public string[] Tags { get; set; }
+        public int[] Ints { get; set; }
     }
 }
