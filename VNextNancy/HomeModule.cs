@@ -56,7 +56,7 @@ namespace VNextNancy
                 WriteLine($"Ints: {ints}");
                 WriteLine($"Tags: {tags}");
                 
-                return View["Index"];
+                return View["Index", myModel];
             };
         }
     }
