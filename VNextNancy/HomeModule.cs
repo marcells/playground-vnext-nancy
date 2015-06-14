@@ -58,6 +58,8 @@ namespace VNextNancy
                 
                 return View["Index", myModel];
             };
+            
+            Get["/razor"] = _ => View["Razor"];
         }
     }
     

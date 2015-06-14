@@ -6,6 +6,7 @@
     "DNX,Version=v4.5.1": [
       "Nancy >= 1.2.0",
       "Nancy.Hosting.AspNet >= 1.2.0",
+      "Nancy.ViewEngines.Razor >= 1.2.0",
       "Microsoft.AspNet.Http >= 1.0.0-beta4",
       "Microsoft.AspNet.Owin >= 1.0.0-beta4",
       "Kestrel >= 1.0.0-beta4"
@@ -384,6 +385,29 @@
         "lib/dnx451/Microsoft.AspNet.Owin.xml",
         "lib/dnxcore50/Microsoft.AspNet.Owin.dll",
         "lib/dnxcore50/Microsoft.AspNet.Owin.xml"
+      ]
+    },
+    "Microsoft.AspNet.Razor/2.0.30506.0": {
+      "serviceable": false,
+      "sha": "mYb3z3NZpD9ucG+UVQFSWGXDfcbL+02BxmPhiZTImm152aL/NpVVvA1FXhFaNxSj7AZN8Ij7gwStUe/9twrPhA==",
+      "frameworks": {
+        "DNX,Version=v4.5.1": {
+          "dependencies": {},
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [
+            "lib/net40/System.Web.Razor.dll"
+          ],
+          "compileAssemblies": [
+            "lib/net40/System.Web.Razor.dll"
+          ]
+        }
+      },
+      "files": [
+        "Microsoft.AspNet.Razor.2.0.30506.0.nupkg",
+        "Microsoft.AspNet.Razor.2.0.30506.0.nupkg.sha512",
+        "Microsoft.AspNet.Razor.nuspec",
+        "lib/net40/System.Web.Razor.dll",
+        "lib/net40/System.Web.Razor.xml"
       ]
     },
     "Microsoft.AspNet.Server.Kestrel/1.0.0-beta4": {
@@ -840,6 +864,39 @@
         "content/web.config.transform",
         "lib/net40/Nancy.Hosting.Aspnet.dll",
         "lib/net40/Nancy.Hosting.Aspnet.xml"
+      ]
+    },
+    "Nancy.ViewEngines.Razor/1.2.0": {
+      "serviceable": false,
+      "sha": "fDbjzQzge4fuuPscrFLULBE0RG1cWd4Q8vusbEeogfguI3i5mQkxrfRtb3CKde5e/5DK5By7a+1p7KAtxasI6Q==",
+      "frameworks": {
+        "DNX,Version=v4.5.1": {
+          "dependencies": {
+            "Nancy": "1.2.0",
+            "Microsoft.AspNet.Razor": "2.0.30506"
+          },
+          "frameworkAssemblies": [],
+          "runtimeAssemblies": [
+            "lib/net40/Nancy.ViewEngines.Razor.dll"
+          ],
+          "compileAssemblies": [
+            "lib/net40/Nancy.ViewEngines.Razor.dll"
+          ]
+        }
+      },
+      "files": [
+        "Nancy.ViewEngines.Razor.1.2.0.nupkg",
+        "Nancy.ViewEngines.Razor.1.2.0.nupkg.sha512",
+        "Nancy.ViewEngines.Razor.nuspec",
+        "BuildProviders/Nancy.ViewEngines.Razor.BuildProviders.XML",
+        "BuildProviders/Nancy.ViewEngines.Razor.BuildProviders.dll",
+        "Tools/GetNancyRazorBuildProviderPostBuildCmd.ps1",
+        "Tools/install.ps1",
+        "Tools/uninstall.ps1",
+        "content/app.config.transform",
+        "content/web.config.transform",
+        "lib/net40/Nancy.ViewEngines.Razor.dll",
+        "lib/net40/Nancy.ViewEngines.Razor.xml"
       ]
     },
     "Newtonsoft.Json/6.0.6": {
