@@ -1,0 +1,17 @@
+{
+    "version": "1.0.0-*",
+    "frameworks": {
+        "dnx451": {
+            "dependencies": {
+                "System.Runtime": "4.0.20-*",
+                "VNextNancy": "1.0.0-*",
+                "Nancy.Testing": "1.2.0",
+                "xunit": "2.1.0-*",
+                "xunit.runner.dnx": "2.1.0-*"
+            }
+        }
+    },
+    "commands": {
+        "test": "xunit.runner.dnx -parallel none"
+    }
+}
